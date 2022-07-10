@@ -1,0 +1,661 @@
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #D3D3D3;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+nav{
+    display: flex;
+    width:100vw;
+    background:#1C1C1C;
+    position:fixed;
+    
+    justify-content: space-between;
+    text-align: center;
+    padding:2vw 2vh;
+}
+
+nav .logo{
+    font-size: 4vw;
+    font-weight: bolder;
+    color: #FFFAFA;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin:auto 5vw;
+}
+
+nav ul li{
+
+    margin: 0 1vh;
+
+}
+
+nav ul li a{
+    color: #FFFAFA;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.3vw;
+    padding: 1vw 1vh;
+
+}
+
+nav ul li:hover a{
+    background:#828282;
+    color:#1C1C1C;
+}
+
+nav .search-box{
+    display: flex;
+    margin: auto 0;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+nav .search-box input{
+    border: none;
+    outline: none;
+    background: #FFF;
+    height:100%;
+    padding: 0 1vw;
+    font-size: 2.5vh;
+    width:20vw;
+
+}
+
+nav .search-box span{
+    color:#1C1C1C;
+    font-size: 1.7vw ;
+    background:#FFF;
+    height: 100%;
+    padding: 0.5vh;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search-box span:hover{
+    color: #FFFAFA;
+}
+nav .search-box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #00FF00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+
+}
+nav .search-box span:hover::after{
+    width: 100%;
+
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+    position: absolute;
+    color: #FFFAFA;
+    font-size: 5vh;
+
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
+
+/**Comeca aqui a pagina inicial*/
+
+#Home{
+    display: flex;
+    
+    display: inline-block;
+    justify-content: space-around;
+    width: 78vw;
+  background: #FFFAFA;
+    margin: 30vh 10vw;
+
+
+}
+
+.container__pai{
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home__container div{
+    display: flex;
+   flex-direction: column;
+    background-color: #FFFAFA;
+    width: 10vw;
+    height: 10vh;
+    padding: 5vh;
+
+}
+
+    
+.coluna__esquerda div{
+    display: flex;
+    background-color: #FFFAFA;
+    flex-direction: column;
+    width: 50vw;
+    height: auto;
+    
+}
+.coluna__esquerda  .imagem{
+    width: 45vw;
+    height: auto;
+}
+.coluna__esquerda h1{
+    padding:2vh 0 0 2vw;
+}
+
+.coluna__esquerda hr{
+    width: 90%;
+    margin: 2vw;
+}
+
+.coluna__direita div{
+    
+    display: flex;
+    background-color: #FFFAFA;
+    flex-direction: column;
+    width: 20vw;
+    height: auto;
+    padding: 3vh 0;
+}
+.coluna__direita{
+    padding:4vh;
+}
+
+.texto{
+    display: flex;
+   justify-content: flex-start;
+    width: 28vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+.texto ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.texto ul li{
+    
+    text-align: left;
+    margin: 0;
+    padding: 2vh;
+    
+}
+.texto ul li a{
+    text-decoration: none;
+    padding:10vh;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #1C1C1C;
+}
+
+/*comeca section filmes*/
+#Filmes{
+    display: flex;
+    
+    display: inline-block;
+    justify-content: space-around;
+    width: 78vw;
+    background: #FFFAFA;
+    margin: 30vh 10vw;
+}
+
+.container__pai2{
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.container__pai2 h1{
+    padding: 3vh  3vw;
+    margin: 3vw;
+}
+
+.bloco__imgtexto{
+    display: flex;
+    
+    justify-content:flex-start;
+    align-items:stretch;
+    width: 80vw;
+    height: 40vh;
+    padding: 4vh 4vw;
+}
+
+.container__pai2 iframe{
+    width: 25vw;
+    height: 35vh;
+}
+.container__pai2 hr{
+    width: 60vw;
+    margin: 0 0 0 5vw;
+}
+.imagem2{
+
+    width: 25vw;
+    height: 35vh;
+    padding: 0 1vw;
+    
+}
+
+
+.texto2{
+    
+
+    
+    margin: 0%;
+    padding: 2vh ;
+}
+
+.texto2 p{
+    padding: 3vh 0;
+}
+
+/*series*/
+#series{
+    display: flex;
+    
+    display: inline-block;
+    justify-content: space-around;
+    width: 78vw;
+    background: #FFFAFA;
+    margin: 30vh 10vw;
+}
+
+/*gaames*/
+#games{
+    display: flex;
+    
+    display: inline-block;
+    justify-content: space-around;
+    width: 78vw;
+    background: #FFFAFA;
+    margin: 30vh 10vw;
+}
+/*animes*/
+#animes{
+    display: flex;
+    
+    display: inline-block;
+    justify-content: space-around;
+    width: 78vw;
+    background: #FFFAFA;
+    margin: 30vh 10vw;
+}
+
+
+
+/*rodape*/
+footer div{
+width: 100%;
+height: 25vh;
+background: #1C1C1C;
+justify-content: space-between;
+
+}
+footer .logo__rodape{
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #FFFAFA;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    padding-right: 10vw;
+    
+}
+
+.footer__pai{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.linkedin{
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #FFFAFA;
+}
+
+.linked__img{
+    display: flex;
+    padding: 0 0 1vh 1vw;
+    width: 3vw;
+    height: 4vh;
+    margin: 0 auto;
+}
+/*aqui comeca formato mobile*/
+
+@media screen and (max-width:990px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+
+    nav .logo{
+
+        display: inline-block;
+        padding:3vh 3vw;
+    }
+
+    nav .search-box{
+        width:100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav .search-box input{
+        width: 90%;
+        
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background: #828282;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    nav ul li{
+        text-align: center;
+        
+        
+    }
+
+    nav ul li a{
+        font-size: 3vw;
+        color: #1C1C1C;
+        padding: 3vh;
+        display: block;
+        font-weight: bold;
+        transition:0; /*esta muito lento arrumar depois*/
+        
+    }
+   
+
+
+    nav .bar{
+        display: block; /*botão sanduíche*/
+        position: absolute;
+        top: 2vh;
+        right: 8vw;
+        cursor: pointer;
+    }
+
+    nav .bar #times{
+        display:none ;
+
+    }
+
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height: 60vh;
+        
+        
+    }
+    /*section{
+        background:#CDC9C9;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        z-index: -1;
+        filter:brightness(30%);
+    }*/
+
+    #Home{
+        display: flex;
+        
+        display: inline-block;
+        justify-content: space-around;
+        width: 80vw;
+      background: #FFFAFA;
+        margin: 30vh 10vw;
+    
+    
+    }
+    
+    .container__pai{
+        width:80vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .home__container div{
+        display: flex;
+       flex-direction: column;
+        background-color: #FFFAFA;
+        width: 10vw;
+        height: 10vh;
+        padding: 5vh
+    
+    }
+    
+        
+    .coluna__esquerda div{
+        display: flex;
+        background-color: #FFFAFA;
+        flex-direction: column;
+        width: 50vw;
+        height: auto;
+        
+    }
+    .coluna__esquerda  .imagem{
+        width: 45vw;
+        height: auto;
+    }
+    .coluna__esquerda h1{
+        padding:2vh;
+    }
+    
+    .coluna__direita div{
+        
+        display: flex;
+        background-color: #FFFAFA;
+        flex-direction: column;
+        width: 20vw;
+        height: auto;
+        padding: 3vh 0;
+    }
+    .coluna__direita{
+        padding:4vh;
+
+    }
+    .texto titulo{
+        display: flex;
+        width: 1vw;
+        height: 2vh;
+    }
+    
+    .texto{
+        display: flex;
+       justify-content: flex-start;
+        width: 10vw;
+        height: 5vh;
+        margin: 0;
+        padding: 0;
+    }
+    .texto ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .texto ul li{
+        
+        text-align: left;
+        margin: 0;
+        padding: 2vh;
+        
+    }
+    .texto ul li a{
+        text-decoration: none;
+        padding:10vh;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        color: #1C1C1C;
+    }
+    
+    /*comeca section filmes*/
+    #Filmes{
+        display: flex;
+        
+        display: inline-block;
+        justify-content: space-around;
+        width: 80vw;
+        background: #FFFAFA;
+        margin: 30vh 10vw;
+    }
+    
+    .container__pai2{
+        width:80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .container__pai2 h1{
+        padding: 3vh  3vw;
+        margin: 3vw;
+    }
+    
+    .bloco__imgtexto{
+        display: flex;
+        
+        justify-content:flex-start;
+        align-items:stretch;
+        width: 70vw;
+        height: 40vh;
+        padding: 4vh 4vw;
+    }
+    
+    .container__pai2 iframe{
+        width: 25vw;
+        height: 20vh;
+    }
+    .imagem2{
+    
+        width: 25vw;
+        height: 20vh;
+        padding: 0 1vw;
+        
+    }
+    
+    
+    .texto2{
+        
+    
+        font-size: 1vw;
+        margin: 0%;
+        padding: 2vh ;
+    }
+    
+    .descricao2{
+        padding: 3vh 0;
+    }
+    
+    /*series*/
+    #series{
+        display: flex;
+        
+        display: inline-block;
+        justify-content: space-around;
+        width: 80vw;
+        background: #FFFAFA;
+        margin: 30vh 10vw;
+    }
+    
+    /*gaames*/
+    #games{
+        display: flex;
+        
+        display: inline-block;
+        justify-content: space-around;
+        width: 80vw;
+        background: #FFFAFA;
+        margin: 30vh 10vw;
+    }
+    /*animes*/
+    #animes{
+        display: flex;
+        
+        display: inline-block;
+        justify-content: space-around;
+        width: 80vw;
+        background: #FFFAFA;
+        margin: 30vh 10vw;
+    }
+    
+    
+    
+    /*rodape*/
+    footer div{
+    width: 100%;
+    height: 30vh;
+    background: #1C1C1C;
+    
+    }
+    footer .logo__rodape{
+        font-size: 3vw;
+        font-weight: bolder;
+        color: #FFFAFA;
+        cursor: pointer;
+        display: flex;
+        justify-content: end;
+        padding-right: 10vw;
+        
+    }
+    
+
+
+
+
+}
